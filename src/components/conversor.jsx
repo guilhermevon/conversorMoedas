@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css"; // Certifique-se de que o caminho está correto para o seu ficheiro CSS
-// Certifique-se de que o seu ficheiro styles.css está importado no seu ponto de entrada (ex: index.js ou App.js principal)
-// ou que está importado diretamente neste componente, se preferir.
-// import './styles.css'; // Remover esta linha se já estiver a ser importado globalmente.
+import "./styles.css";
 
-// Função mock para simular a chamada da API
-// Mantenha esta função fora do componente ou importe-a de um ficheiro de serviços.
 async function fetchConversion(from, to) {
-  // Simula um atraso de rede
   await new Promise((resolve) => setTimeout(resolve, 500));
   const rates = {
     USD: { BRL: 4.85, EUR: 0.92, JPY: 155.0, GBP: 0.79, CAD: 1.36 },
@@ -24,9 +18,6 @@ async function fetchConversion(from, to) {
 const currencies = ["USD", "EUR", "BRL", "JPY", "GBP", "CAD"];
 
 function Conversor() {
-  // Estados e funções (useState, useEffect, handleConvert, handleSwapCurrencies)
-  // devem ser definidos aqui, usando o seu código original como base.
-  // Por exemplo:
   const [amount, setAmount] = useState(1000);
   const [fromCurrency, setFromCurrency] = useState("BRL");
   const [toCurrency, setToCurrency] = useState("EUR");
@@ -65,8 +56,8 @@ function Conversor() {
         <p className="description-text">
           Converta 140 moedas à taxa de câmbio média do mercado.
           <br />
-          ConVersor é a conta internacional para enviar, gastar e converter dinheiro
-          como um local.
+          ConVersor é a conta internacional para enviar, gastar e converter
+          dinheiro como um local.
         </p>
 
         <div className="converter-form-inner">
@@ -87,13 +78,13 @@ function Conversor() {
               <input
                 type="number"
                 className="currency-input"
-                value={amount} // Use o estado 'amount'
-                onChange={(e) => setAmount(e.target.value)} // Atualize o estado 'amount'
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
               />
               <select
                 className="currency-select"
-                value={fromCurrency} // Use o estado 'fromCurrency'
-                onChange={(e) => setFromCurrency(e.target.value)} // Atualize o estado 'fromCurrency'
+                value={fromCurrency}
+                onChange={(e) => setFromCurrency(e.target.value)}
               >
                 {currencies.map((c) => (
                   <option key={c} value={c}>
@@ -107,7 +98,7 @@ function Conversor() {
           <div className="swap-button-container">
             <button
               className="swap-btn"
-              onClick={handleSwapCurrencies} // Chame a função de troca
+              onClick={handleSwapCurrencies}
               aria-label="Trocar moedas"
             >
               <svg
@@ -133,13 +124,13 @@ function Conversor() {
               <input
                 type="text"
                 className="currency-input-readonly"
-                value={isLoading ? "Calculando..." : result || ""} // Use o estado 'result' e 'isLoading'
+                value={isLoading ? "Calculando..." : result || ""}
                 readOnly
               />
               <select
                 className="currency-select"
-                value={toCurrency} // Use o estado 'toCurrency'
-                onChange={(e) => setToCurrency(e.target.value)} // Atualize o estado 'toCurrency'
+                value={toCurrency}
+                onChange={(e) => setToCurrency(e.target.value)}
               >
                 {currencies.map((c) => (
                   <option key={c} value={c}>
@@ -151,9 +142,9 @@ function Conversor() {
           </div>
 
           <button
-            onClick={handleConvert} // Chame a função de conversão
+            onClick={handleConvert}
             className="button-primary"
-            disabled={isLoading} // Desabilite durante o carregamento
+            disabled={isLoading}
           >
             {isLoading ? "Convertendo..." : "Enviar dinheiro"}
           </button>
