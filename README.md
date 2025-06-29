@@ -4,6 +4,8 @@ Projeto simples de conversor de moedas feito com React e Vite.
 
 ---
 
+<img src = "file:///C:/Users/CEMIG/Desktop/myPortfolio/imagens/conversorMoedas.png" alt="conversor">
+
 ## Descrição
 
 Este projeto permite converter valores entre diferentes moedas utilizando taxas de câmbio atualizadas. Foi desenvolvido usando React para a interface e Vite como bundler.
