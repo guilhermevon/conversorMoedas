@@ -50,7 +50,7 @@ Você pode acessar a aplicação online em:
 
 👉 https://guilhermevon.github.io/conversorMoedas
 
-#📁 Estrutura do Projeto
+# 📁 Estrutura do Projeto
 
 conversorMoedas/
 ├── public/
@@ -65,5 +65,5 @@ conversorMoedas/
 ├── vite.config.js
 └── README.md
 
-#✍️ Autor
+# ✍️ Autor
 Desenvolvido por Guilherme Carvalho (guilhermevon)
