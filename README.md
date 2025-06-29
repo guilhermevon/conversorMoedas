@@ -16,6 +16,7 @@ Este projeto permite converter valores entre diferentes moedas utilizando taxas 
 
 - React 19
 - Vite
+- Api RESTfull
 - GitHub Pages (para hospedagem)
 - gh-pages (para deploy automático)
 
