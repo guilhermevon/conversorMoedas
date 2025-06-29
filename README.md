@@ -31,18 +31,19 @@ As taxas de câmbio são atualizadas automaticamente via API pública.
 
 ## 🧪 Como Rodar Localmente
 
-```bash
-# 1. Clone o repositório
-git clone https://github.com/guilhermevon/conversorMoedas.git
+1. **Clone o repositório:**
 
-# 2. Acesse a pasta do projeto
-cd conversorMoedas
+   ```bash
+   git clone https://github.com/guilhermevon/conversorMoedas.git
 
-# 3. Instale as dependências
-npm install
-
-# 4. Rode o projeto
-npm run dev
+  # 2. Acesse a pasta do projeto
+  cd conversorMoedas
+  
+  # 3. Instale as dependências
+  npm install
+  
+  # 4. Rode o projeto
+  npm run dev
 
 🔗 Deploy Online
 Você pode acessar a aplicação online em:
