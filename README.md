@@ -4,7 +4,7 @@ Projeto simples de conversor de moedas feito com React e Vite.
 
 ---
 
-<img src = "file:///C:/Users/CEMIG/Desktop/myPortfolio/imagens/conversorMoedas.png" alt="conversor">
+<img src = "https://github.com/guilhermevon/conversorMoedas/blob/main/public/conversorMoedas.png" alt="conversor">
 
 ## Descrição
 
