@@ -57,7 +57,7 @@ conversorMoedas/
 │   └── conversorMoedas.png       # Imagem usada no README
 ├── src/
 │   ├── components/
-│   │   └── CurrencyConverter.jsx # Componente principal
+│   │   └── Conversor.jsx # Componente principal
 │   ├── App.jsx                   # Root component
 │   └── main.jsx                  # Entry point
 ├── index.html
